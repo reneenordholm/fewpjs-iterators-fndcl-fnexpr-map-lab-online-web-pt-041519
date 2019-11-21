@@ -16,9 +16,9 @@ const titleCased = () => {
   return tutorials.map(function(tutorial) {
     // create string of words within each tutorial array
     let words = tutorial.split(' ')
-    //
+    // upcase the first letter of each word in array
     let titledWord = words.map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    
+    // join each tutorial array back together and return it
     return titledWord.join(' ')
   })
 }
